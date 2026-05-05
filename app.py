@@ -251,12 +251,6 @@ def chat():
     except Exception as e:
         return jsonify({"reply": "", "error": str(e)})
 
-mp.solutions.hands.Hands(
-    static_image_mode=False,
-    max_num_hands=2,
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5
-)
 
 if __name__ == "__main__":
     print("Loading sign language model...")
